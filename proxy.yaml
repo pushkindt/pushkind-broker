@@ -1,5 +1,5 @@
 pairs:
-  - name: default
+  - name: emailer
     frontend: "tcp://*:5557"
     backend:  "tcp://*:5558"
     xsub_rcvhwm: 100000
