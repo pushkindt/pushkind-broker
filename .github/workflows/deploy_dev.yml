@@ -41,7 +41,7 @@ jobs:
           if_key_exists: fail # replace / ignore / fail; optional (defaults to fail)
       - name: Deploy
         run: |
-          # ssh cicd@users.pushkind.com "supervisorctl stop broker"
+          ssh cicd@users.pushkind.com "supervisorctl stop broker"
           scp ./target/release/pushkind-broker cicd@users.pushkind.com:/var/www7/html/
           scp ./proxy.yaml cicd@users.pushkind.com:/var/www7/html/
-          # ssh cicd@users.pushkind.com "supervisorctl start broker"
+          ssh cicd@users.pushkind.com "supervisorctl start broker"
