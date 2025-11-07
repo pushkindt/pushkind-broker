@@ -9,3 +9,8 @@ pairs:
     backend:  "tcp://127.0.0.1:5560"
     xsub_rcvhwm: 100000
     xpub_sndhwm: 100000
+  - name: sms
+    frontend: "tcp://127.0.0.1:5561"
+    backend:  "tcp://127.0.0.1:5562"
+    xsub_rcvhwm: 100000
+    xpub_sndhwm: 100000
